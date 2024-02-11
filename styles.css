@@ -5,6 +5,7 @@
   --text-shade-1-hover:white;
   --background:rgba(220, 220, 220, 0.795);
   --info-text:#000000cc;
+  --glass-background:rgba(255, 255, 255, 0.5);
 }
 *{
   box-sizing: border-box;
@@ -20,12 +21,16 @@ div{
 /* Navbar styling */
 
 
+
 .navbar{
+  background-color: var(--glass-background); 
+   backdrop-filter:blur(4px);
+   z-index: 10;
   position: fixed;
   top:0;
   left:0;
   width: 100%;
-  z-index:1000;
+  /* z-index:1000; */
 }
 .upper-nav{
   padding: 0;
@@ -62,10 +67,10 @@ div{
   color: var(--info-text);
 }
 #mail-address{
-  font-size: 20px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 22px;
+  font-family: 'Protest Strike', sans-serif;
   padding-top:20px;
-  font-weight: 700;
+  font-weight: 100;
 }
 .logotext{
   padding-left:50px;
@@ -98,6 +103,8 @@ color:var(--theme-shade-1)
 .navlinks a{
   text-decoration: none;
   color:var(--text-shade-1);
+  font-family: 'Protest Strike', sans-serif;
+  /* font-weight: 0; */
   font-size: 15px;
   padding-top: 15px;
   padding-bottom: 11px;
@@ -117,6 +124,7 @@ color:var(--theme-shade-1)
 .loading{
   background-color: var(--background);
   height:500px;
+  margin-top:200px ;
 }
 
 
@@ -142,4 +150,42 @@ color:var(--theme-shade-1)
   transition: .4s;
   cursor:pointer;
   border-radius:3%;
+}
+
+
+/* Filter Styling */
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 40px;
+}
+.fil{
+  margin:0 20px;
+  padding-right:50px;
+  padding-left:50px;
+  background-color: var(--background);
+  border-radius: 2ch;
+}
+
+
+/* Products Styling */
+
+.products{
+  padding:auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product{
+  /* padding: 200px 100px; */
+  height: 400px;
+  width:300px;
+  margin:20px 50px;
+  background-color: var(--background);
+  border-radius: 8px;
 }
