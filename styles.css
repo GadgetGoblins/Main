@@ -14,7 +14,7 @@
 }
 div{
   /* border:2px solid black; */
-  padding:20px;
+  padding:4vh;
 }
 
 
@@ -24,7 +24,7 @@ div{
 
 .navbar{
   background-color: var(--glass-background); 
-   backdrop-filter:blur(4px);
+   backdrop-filter:blur(.8vh);
    z-index: 10;
   position: fixed;
   top:0;
@@ -59,26 +59,26 @@ div{
 
 }
 .nav-mail{
-  font-size: 40px;
+  /* font-size: 40px; */
   justify-content: flex-end;
   /* margin-left: auto; */
   padding: 10px 20px;
-  font-size: 40px;
+  /* font-size: 40px  ; */
   color: var(--info-text);
 }
 #mail-address{
-  font-size: 22px;
+  font-size: 5vh;
   font-family: 'Protest Strike', sans-serif;
-  padding-top:20px;
+  padding-top:4vh;
   font-weight: 100;
 }
 .logotext{
-  padding-left:50px;
-  padding: 20px 50px;
+  /* padding-left:50px; */
+  padding: 4vh 10vh;
   font-family: 'Protest Guerrilla', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
 /* font-weight: bold;   */
-font-size: 35px;
+font-size: 8vh;
 color:var(--theme-shade-1)
 }
 .navlinks{
